@@ -15,10 +15,11 @@ export const SuperHeroesPage = () => {
             .get("http://localhost:4000/superheroes")
             .then((res) => {
                 setData(res.data);
-                setIsLoading(false);
             })
             .catch((err) => {
                 setError(err.message);
+            })
+            .finally(() => {
                 setIsLoading(false);
             });
     }, []);
