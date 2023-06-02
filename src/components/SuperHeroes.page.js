@@ -1,6 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+/**
+ * The traditional way of querying data without react-query
+ */
+
 export const SuperHeroesPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState([]);

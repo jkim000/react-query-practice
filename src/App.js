@@ -5,6 +5,8 @@ import { RQSuperHeroesPage } from "./components/RQSuperHeroes.page";
 import "./App.css";
 
 function App() {
+    // this queryClient combined with the Provider at the top level of the jsx
+    // gives all children access to the hooks react-query provides
     return (
         <Router>
             <div>
